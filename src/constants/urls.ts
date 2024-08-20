@@ -1,5 +1,5 @@
 export const BASE_LOCAL = 'http://localhost:3000'
-export const BASE_URL = 'http://localhost:3000'
+export const BASE_URL = 'https://blog-app-main-xi.vercel.app'
 export const VIEW_BLOG = 'blog/view';
 export const CREATE_BLOG = 'blog/create';
 export const EDIT_BLOG = 'blog/edit';
