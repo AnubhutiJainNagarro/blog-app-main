@@ -168,30 +168,6 @@ function CreateBlog(props) {
         value={formData.author}
         onChange={handleChange}
       />
-
-      <Autocomplete
-        id="tags"
-        clearIcon={false}
-        options={[]}
-        freeSolo
-        multiple
-        value={formData?.tags}
-        onChange={(event, newValue) => {
-          handleChange(event, newValue);
-        }}
-        renderTags={(value, props) =>
-          value.map((option, index) => (
-            <Chip key={index} label={option} {...props({ index })} />
-          ))
-        }
-        renderInput={(params) => (
-          <TextField
-            {...params}
-            label="Tags"
-            placeholder="Please enter tags..."
-          />
-        )}
-      />
       <Button
         type="submit"
         variant="contained"
